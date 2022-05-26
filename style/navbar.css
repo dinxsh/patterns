@@ -19,14 +19,16 @@ body {
   .sidebar a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
-    font-size: 25px;
-    color: #818181;
+    font-size: 20px;
+    color: white;
+    text-shadow: 1px 1px black;
     display: block;
     transition: 0.3s;    
   }
   
   .sidebar a:hover {
     color: #f1f1f1;
+    text-shadow: 1.5px 1.5px black;  
   }
   
   .sidebar .closebtn {
@@ -40,7 +42,7 @@ body {
   .openbtn {
     font-size: 20px;
     cursor: pointer;
-    background-color:lightsalmon;
+    background-color:salmon;
     color: white;
     padding: 10px 15px;
     border: none;
@@ -49,7 +51,7 @@ body {
   
   .openbtn:hover {
     background-color: lightcoral;
-    box-shadow: 3px 3px 3px grey;
+    box-shadow: 2px 2px 2px lightgrey;
   }
   
   #main {

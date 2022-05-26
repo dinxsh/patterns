@@ -22,3 +22,7 @@
 #CDNLink-Copy{
     padding:10px;
 }
+
+.sidebar-elem:hover{
+    background-color: white;
+}

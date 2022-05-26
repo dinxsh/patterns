@@ -1,0 +1,9 @@
+.versiondiv{
+    box-shadow: 3px 3px 3px lightgrey;
+    border: 1px solid lightgrey;
+    width:70%;  
+}
+
+.versiondiv:hover{
+    box-shadow: 5px 5px 5px lightgrey;    
+}

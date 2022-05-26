@@ -28,8 +28,8 @@ app.get('/get-started', (request, response) => {
     })
 });
 
-app.get('/t', (request, response) => {              
-    fs.readFile('views/t.html', 'utf-8', (err, html) =>{
+app.get('/feedback', (request, response) => {              
+    fs.readFile('views/feedback.html', 'utf-8', (err, html) =>{
         if (err){
             response.status(500).send('sorry, server out of service');
         }        
@@ -37,8 +37,28 @@ app.get('/t', (request, response) => {
     })
 });
 
-app.get('/feedback', (request, response) => {              
-    fs.readFile('views/feedback.html', 'utf-8', (err, html) =>{
+
+app.get('/versions', (request, response) => {              
+    fs.readFile('views/versions.html', 'utf-8', (err, html) =>{
+        if (err){
+            response.status(500).send('sorry, server out of service');
+        }        
+        response.send(html);
+    })
+});
+
+app.get('/components/buttons', (request, response) => {              
+    fs.readFile('views/components/button.html', 'utf-8', (err, html) =>{
+        if (err){
+            response.status(500).send('sorry, server out of service');
+        }        
+        response.send(html);
+    })
+});
+
+
+app.get('/components/navbar', (request, response) => {              
+    fs.readFile('views/components/navbar.html', 'utf-8', (err, html) =>{
         if (err){
             response.status(500).send('sorry, server out of service');
         }        

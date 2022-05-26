@@ -1,17 +1,23 @@
 body {
     text-align: center;
     font-family:Cambria;
+    font-size: 20px;
     color:darkslategrey;    
 }
 
 .comp-buttons{
+    width:130px;
+    height:40px;
     box-shadow: 3px 3px 3px lightgray;
     margin:10px;
-    background-color: lightcoral;        
-    color:white;
-    border:0px;
-    padding:8px;
-    border-radius:10px;    
+    background-color: lightblue;        
+    color:white;        
+    border-radius:3px;    
+}
+
+
+.comp-buttons:hover{    
+    box-shadow: 3px 3px 3px grey;    
 }
 
 #TitleNavBar {
