@@ -5,6 +5,19 @@ body {
     color:darkslategrey;    
 }
 
+button {  
+    border: none;
+    color: white;
+    padding: 14px 14px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
 .comp-buttons{
     width:130px;
     height:40px;
@@ -22,8 +35,8 @@ body {
 
 #TitleNavBar {
     font-family: Cambria;
-    color: lightsalmon;
-    text-shadow: 1px 1px 1px slategrey;             
+    color: darkslategray;
+    text-shadow: 1px 1px 1px darkslategray;             
     font-size: 40px;
 }
 #CdnLinkInput{
@@ -32,8 +45,13 @@ body {
 .HalfHR{
     width:95%;
 }
+.subtopic{
+    position:absolute;
+    left:3%;
+}
+
 .MarqueeGlobalDiv{
-    background-color: coral;
+    background-color:#404040;
     height:100%;
     position:absolute;
     top:0px;
@@ -42,7 +60,8 @@ body {
     height:30px;
     color:white;
     font-weight: 540;
-    font-size: large;    
+    font-size: large;   
+    padding: 5px; 
 }
 .marquee-content{
     margin-right:24px;
@@ -56,4 +75,10 @@ a {
 .sidebar {
     position: absolute;
     left:0;
+}
+.button-group{
+    padding:10px;
+    background-color:#E7E9EB;
+    margin: 10px;
+    border-radius: 10px;
 }
