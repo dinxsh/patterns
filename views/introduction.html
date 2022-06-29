@@ -1,15 +1,15 @@
-<!DOCTYPE html>
+  <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yeet - Introduction</title>
-    <link rel="stylesheet" type="text/css" href="/style/global.css" />
-    <link rel="stylesheet" type="text/css" href="/style/intro.css" />
-    <link rel="stylesheet" type="text/css" href="/style/accordion.css" />
-    <link rel="stylesheet" href="style/navbar.css" />
-    <script src="navbar.js"></script>
+    <link rel="stylesheet" type="text/css" href="../style/global.css" />
+    <link rel="stylesheet" type="text/css" href="../style/intro.css" />
+    <link rel="stylesheet" type="text/css" href="../style/accordion.css" />
+    <link rel="stylesheet" href="../style/navbar.css" />
+    <script src="../navbar.js"></script>
 </head>
 <body>    
     
@@ -29,18 +29,10 @@
         <div>            
               <button class="accordion">Components </button>
               <div class="panel">
-                <button class="accordion">Buttons </button>
-                    <div class="panel">
-                      <button>a</button>
-                    </div>
-                <button class="accordion">Navbars </button>
-                    <div class="panel">
-                      <button>a</button>
-                    </div>
-                <button class="accordion">Accordions </button>
-                    <div class="panel">
-                      <button>a</button>
-                    </div>
+                <a class="accord-items">Buttons</a>                    
+                <a class="accord-items">Navbars</a>                
+                <a class="accord-items">Accordions</a>                    
+                <a class="accord-items">Navbars</a>                                
               </div>
               <hr>
               <script>
@@ -67,17 +59,35 @@
       </div>
       
       <div id="main">
-        <button class="openbtn" onclick="openNav()">☰</button>          
+        <button id="closebtn" class="openbtn" onclick="openNav()">☰</button>          
       </div>    
     </div>
 
     <div class="main-content">
-        <div>
-            <br><center><h1 id="TitleNavBar">Introduction</h1></center><hr class="HalfHR"><br>            
-            <p>Yeet CSS is a free-to-use css library which provides UI components for your website :)</p>            
+      <center>        
+            <br><h1 title="UwU" id="TitleNavBar">Introduction</h1><hr class="HalfHR"><br>            
 
-            <p>a</p>            
-        </div>        
+            <div class="button-group">         
+              <p>Powerful, extensible, and feature-packed frontend toolkit. Build and customize with Sass, utilize prebuilt grid system and components,<br>and bring projects to life with powerful JavaScript plugins.</p>
+            </div>
+
+            <div class="button-group">              
+              <p>Yeet CSS is a free-to-use css library which provides UI components for your website :)</p>
+              <p>From Buttons, Accordions to much more, we got you covered </p>
+            </div>
+            
+            <div class="button-group">                                                        
+              <table style="border:1px solid black;width:100%;padding-bottom:20px;padding-left:20px;">
+                <tr>                  
+                  <br><p>View Tutorials by our experts - <a href="Get-Started">view all tutorials</a></p>
+                  <td class="intro-item"><br><a href="get-started"> How to add components to a page directly</a>    </td>
+                  <td class="intro-item"><br><a href="get-started">How to add components to a page with CDN</a></td>
+                  <td class="intro-item"><br><a href="get-started">How to add only the componenets you need</a></td>
+                </tr>  
+              </table>                                        
+            </div>
+   
+      </center>                
     </div>        
 </body>
 </html>

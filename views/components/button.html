@@ -5,15 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yeet | Components - Button</title>
-    <link rel="stylesheet" type="text/css" href="/style/global.css" />
-    <link rel="stylesheet" type="text/css" href="/style/buttons.css" />
-    <link rel="stylesheet" type="text/css" href="/style/intro.css" />
-    <link rel="stylesheet" type="text/css" href="/style/accordion.css" />
-    <link rel="stylesheet" type="text/css" href="/style/navbar.css" />
-    <script src="../navbar.js"></script>
+    <link rel="stylesheet" type="text/css" href="../../style/global.css" />
+    <link rel="stylesheet" type="text/css" href="../../style/src/buttons.css" />
+    <link rel="stylesheet" type="text/css" href="../../style/intro.css" />
+    <link rel="stylesheet" type="text/css" href="../../style/accordion.css" />
+    <link rel="stylesheet" type="text/css" href="../../style/navbar.css" />
+    <script src="../../navbar.js"></script>
 </head>
 <body>    
-    
+  <div class="jumbotron">
     <div class="MarqueeGlobalDiv">        
         <center><marquee class="MarqueeGlobal" direction="left" loop="infinite">
             <div class="marquee-content">|</div>
@@ -23,7 +23,7 @@
         </marquee></center>
     </div>             
     
-    <div id="mySidebar" class="sidebar">
+    <div id="mySidebar" class="sidebar">        
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
         <hr><a href="/">Introduction</a><hr/>
         <a href="get-started">Get Started</a><hr/>
@@ -43,6 +43,7 @@
                       <button>a</button>
                     </div>
               </div>
+            
               <hr>
               <script>
               var acc = document.getElementsByClassName("accordion");
@@ -60,7 +61,7 @@
                 });
               }
               </script>              
-        </div>
+        </div>        
         <a href="get-started">Tutorial</a><hr/>
         <a href="get-started">Blogs</a><hr/>
         <a href="versions">Versions</a><hr/>
@@ -68,17 +69,17 @@
       </div>
       
       <div id="main">
-        <button class="openbtn" onclick="openNav()">☰</button>          
+        <button id="closebtn"  class="openbtn" onclick="openNav()">☰</button>          
       </div>    
     </div>
 
     <div class="main-content">
         <div>
+          <center>
             <br><center><h1 id="TitleNavBar">Buttons</h1></center><hr class="HalfHR"><br>            
             <p>Here are some pog CSS Buttons :)</p><br><br>   
-
             <div class="button-group">
-            <h2 class="subtopic">Default Buttons:<h2><br><hr>
+            <h2 class="subtopic">Default Buttons:<h2><hr>
                   <button class="btn-primary">Primary</button>
                   <button class="btn-secondary">Secondary</button>
                   <button class="btn-light">Light</button>
@@ -88,16 +89,25 @@
             </div>
             <br>
             <div class="button-group">
-              <h2 class="subtopic">Hoverable Buttons:<h2><br><hr>
+              <h2 class="subtopic">Hoverable Buttons:<h2><hr>
                     <button class="btn-hvr-primary">Primary</button>
                     <button class="btn-hvr-secondary">Secondary</button>
                     <button class="btn-hvr-light">Light</button>
                     <button class="btn-hvr-dark">Dark</button>
                     <button class="btn-hvr-alert">Alert</button>
                     <button class="btn-hvr-error">Error</button>
-                    <button class="btn-hvr-notify">Notify</button>
-              </div>
+                    <button class="btn-hvr-notify">Notify</button> 
+                    
+
+                    <button class="btn-unhvr-primary">Primary</button>
+                    <button class="btn-unhvr-secondary">Secondary</button>
+                    <button class="btn-unhvr-light">Light</button>
+                    <button class="btn-unhvr-dark">Dark</button>
+                    <button class="btn-unhvr-alert">Alert</button>
+                    <button class="btn-unhvr-error">Error</button>
+                    <button class="btn-unhvr-notify">Notify</button>
         </div>        
     </div>        
+  </div>
 </body>
 </html>

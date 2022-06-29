@@ -9,6 +9,7 @@ app.engine('html', require('ejs').renderFile);
 app.set('view engine', 'html');
 
 app.use(express.static(path.join(__dirname)));
+app.use(express.static('style'));
 
 app.get('/', (request, response) => {              
     fs.readFile('views/introduction.html', 'utf-8', (err, html) =>{
@@ -55,7 +56,6 @@ app.get('/components/buttons', (request, response) => {
         response.send(html);
     })
 });
-
 
 app.get('/components/navbar', (request, response) => {              
     fs.readFile('views/components/navbar.html', 'utf-8', (err, html) =>{
