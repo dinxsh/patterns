@@ -26,8 +26,8 @@ button {
     background-color: lightblue;        
     color:white;        
     border-radius:3px;    
+    margin:0px;    
 }
-
 
 .comp-buttons:hover{    
     box-shadow: 3px 3px 3px grey;    
@@ -79,6 +79,8 @@ a {
 .button-group{
     padding:10px;
     background-color:#E7E9EB;
-    margin: 10px;
+    margin: 30px;
     border-radius: 10px;
+    box-shadow:4px 4px 4px lightgrey;
+    margin-bottom:40px;
 }

@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Versions - Yeet</title>
-    <link rel="stylesheet" type="text/css" href="/style/global.css" />    
+    <title>Yeet - Feedback</title>
+    <link rel="stylesheet" type="text/css" href="/style/global.css" />
+    <link rel="stylesheet" type="text/css" href="/style/feedback.css" />
     <link rel="stylesheet" href="style/navbar.css" />
-    <link rel="stylesheet" href="style/version.css" />
-    <script src="navbar.js"></script>
+    <script src="../scripts/navbar.js"></script>
 </head>
 <body>
     <div class="MarqueeGlobalDiv">        
@@ -21,9 +21,8 @@
             <div class="marquee-content">Support us on <a href="patreon">patreon</a> 🐱‍👤 </div></a>
             <div class="marquee-content">|</div>
         </marquee></center>
-    </div>
+    </div>    
 
-    
     <div id="mySidebar" class="sidebar">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
         <hr><a href="/">Introduction</a><hr/>
@@ -32,33 +31,26 @@
         <a href="get-started">Tutorial</a><hr/>
         <a href="get-started">Blogs</a><hr/>
         <a href="versions">Versions</a><hr/>
-        <a href="feedback">Feedback</a><hr/>
-      </div>
-      
-      <div id="main">
-        <button class="openbtn" onclick="openNav()">☰</button>          
-      </div>    
+        <a href="feedback">Feedback</a><hr/>  
+        </div>
+        
+        <div id="main">
+        <button  id="closebtn"  class="openbtn" onclick="openNav()">☰</button>          
+        </div>  
     </div>
-
-    <div class="main-content">
-        <div>
-            <br><center><h1 id="TitleNavBar">Versions</h1></center><hr class="HalfHR"><br>            
-            <p>Different YEET CSS versions with packages and release dates </p><br><br>
-            
-            <center>
-            <div class="versiondiv">
-                <p>YEET CSS V1 <sub>(2022-current)</sub></p>
-                <button>View</button>
-                <button>Releases</button><br><br>
-            </div>
-            <br><br>
-            <div class="versiondiv">
-                <p>YEET CSS Beta <sub>(unstable)</sub></p>
-                <button>View</button>                
-                <button>Participate</button><br><br>
-            </div>
-            </center>
-        </div>        
-    </div>        
+       
+    <div class="main-content">        
+        <h1>Gib Feedback</h1><hr class="HalfHR" /><br>
+        <form action="SaveData">            
+            Name: <br>
+            <input type="text" name="name" placeholder="Enter name"> <br><br>
+            Email: <br>
+            <input type="text" name="email" placeholder="Enter name"> <br><br>
+            Complain: <br>
+            <textarea type="text" name="complain" placeholder="Enter Complain" ></textarea> <br><br>
+            <button type="submit">Submit</button> <br><br><br>
+        </form>
+    </div>
 </body>
 </html>
+

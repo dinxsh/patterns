@@ -10,7 +10,7 @@ body {
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: darkslategrey;
+    background-color: #404040;
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
@@ -24,6 +24,7 @@ body {
     text-shadow: 1px 1px black;
     display: block;
     transition: 0.3s;    
+        
   }
   
   .sidebar a:hover {
@@ -58,8 +59,7 @@ body {
   }
   
   #main {
-    transition: margin-left .5s;
-    padding: 16px;
+    transition: margin-left .5s;    
     position: relative;
     left:0;
     top:0;

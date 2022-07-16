@@ -10,10 +10,10 @@
     <link rel="stylesheet" type="text/css" href="/style/intro.css" />
     <link rel="stylesheet" type="text/css" href="/style/accordion.css" />
     <link rel="stylesheet" type="text/css" href="/style/navbar.css" />
-    <script src="../navbar.js"></script>
+    <script src="../scripts/navbar.js"></script>
 </head>
 <body>    
-    
+  <div class="jumbotron">
     <div class="MarqueeGlobalDiv">        
         <center><marquee class="MarqueeGlobal" direction="left" loop="infinite">
             <div class="marquee-content">|</div>
@@ -23,7 +23,7 @@
         </marquee></center>
     </div>             
     
-    <div id="mySidebar" class="sidebar">
+    <div id="mySidebar" class="sidebar">        
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
         <hr><a href="/">Introduction</a><hr/>
         <a href="get-started">Get Started</a><hr/>
@@ -43,6 +43,7 @@
                       <button>a</button>
                     </div>
               </div>
+            
               <hr>
               <script>
               var acc = document.getElementsByClassName("accordion");
@@ -60,7 +61,7 @@
                 });
               }
               </script>              
-        </div>
+        </div>        
         <a href="get-started">Tutorial</a><hr/>
         <a href="get-started">Blogs</a><hr/>
         <a href="versions">Versions</a><hr/>
@@ -68,7 +69,7 @@
       </div>
       
       <div id="main">
-        <button class="openbtn" onclick="openNav()">☰</button>          
+        <button id="closebtn"  class="openbtn" onclick="openNav()">☰</button>          
       </div>    
     </div>
 
@@ -76,7 +77,6 @@
         <div>
             <br><center><h1 id="TitleNavBar">Buttons</h1></center><hr class="HalfHR"><br>            
             <p>Here are some pog CSS Buttons :)</p><br><br>   
-
             <div class="button-group">
             <h2 class="subtopic">Default Buttons:<h2><br><hr>
                   <button class="btn-primary">Primary</button>
@@ -99,5 +99,6 @@
               </div>
         </div>        
     </div>        
+  </div>
 </body>
 </html>

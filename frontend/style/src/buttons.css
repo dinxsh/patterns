@@ -45,56 +45,44 @@ button {
 
 
 
-
-.btn-hvr-primary:hover{
+.btn-hvr-primary{
     background-color: #3366CC; 
     border: 1px solid black;
 }
 
-.btn-hvr-secondary:hover{
+.btn-hvr-secondary{
     background-color: #707070;
     color:black; 
     border: 1px solid black;
 }
 
-.btn-hvr-light:hover{
+.btn-hvr-light{
     background-color: #989898; 
     color:black; 
     border: 1px solid black;
 }
 
-.btn-hvr-dark:hover{
+.btn-hvr-dark{
     background-color: #303030; 
     color:black; 
     border: 1px solid black;
 }
 
-.btn-hvr-alert:hover{
+.btn-hvr-alert{
     background-color: #A00000; 
     color:black; 
     border: 1px solid black;
 }
 
-.btn-hvr-error:hover{
+.btn-hvr-error{
     background-color: #FFFF66; 
     color:black;
     border: 1px solid black;
 }
 
-.btn-hvr-notify:hover{
+.btn-hvr-notify{
     background-color: rgb(4, 170, 109);
     color:black; 
     border: 1px solid black;
 }; 
-
-
-
-.button-hvr {
-    transition-duration: 0.4s;
-  }
-  
-  .button-hvr:hover {
-    background-color: #4CAF50; /* Green */
-    color: white;
-  }
 
