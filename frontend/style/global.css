@@ -2,7 +2,7 @@ body {
     text-align: center;
     font-family:Cambria;
     font-size: 20px;
-    color:darkslategrey;    
+    color:darkslategrey;            
 }
 
 button {  
@@ -78,9 +78,10 @@ a {
 }
 .button-group{
     padding:10px;
-    background-color:#E7E9EB;
+    background-color:lightgrey;
+    border:1px solid grey;
     margin: 30px;
     border-radius: 10px;
-    box-shadow:4px 4px 4px lightgrey;
+    box-shadow:5px 5px 5px lightgrey;
     margin-bottom:40px;
 }

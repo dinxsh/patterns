@@ -26,20 +26,39 @@
 
     <div id="mySidebar" class="sidebar">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-        <hr>
-        <a href="/">Introduction</a><hr/>
+        <hr><a href="/">Introduction</a><hr/>
         <a href="get-started">Get Started</a><hr/>
-        <a href="get-started">Components</a><hr/>
+        <div>            
+              <button class="accordion">Components </button>
+              <div class="panel">
+                <a class="accord-items">Buttons</a>                    
+                <a class="accord-items">Navbars</a>                
+                <a class="accord-items">Accordions</a>                    
+                <a class="accord-items">Navbars</a>                                
+              </div>
+              <hr>
+              <script>
+              var acc = document.getElementsByClassName("accordion");
+              var i;
+              
+              for (i = 0; i < acc.length; i++) {
+                acc[i].addEventListener("click", function() {
+                  this.classList.toggle("active");
+                  var panel = this.nextElementSibling;
+                  if (panel.style.display === "block") {
+                    panel.style.display = "none";
+                  } else {
+                    panel.style.display = "block";
+                  }
+                });
+              }
+              </script>              
+        </div>
         <a href="get-started">Tutorial</a><hr/>
         <a href="get-started">Blogs</a><hr/>
         <a href="versions">Versions</a><hr/>
         <a href="feedback">Feedback</a><hr/>
-        </div>
-        
-        <div id="main">
-            <button id="closebtn" class="openbtn" onclick="openNav()">☰</button>          
-        </div>  
-    </div>
+      </div>
     
 
 

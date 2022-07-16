@@ -13,7 +13,7 @@
   
   .active, .accordion:hover {
     color:white;
-    background-color: gray; 
+    background-color: darkgray; 
     text-shadow: 1.5px 1.5px black;
   }
   
@@ -35,6 +35,6 @@
     content: "\2796"; /* Unicode character for "minus" sign (-) */
   }
   .accord-items{
-    background-color:grey;
+    background-color:darkgray;
     border-top: 1px solid #404040;   
   }
