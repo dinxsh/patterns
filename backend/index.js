@@ -10,7 +10,7 @@ const CompRouter = require("../backend/routes/components")
 app.use("/", MainRouter)
 app.use("/components", CompRouter)
 
-app.use(express.static(path.join(__dirname, '../frontend')));
+app.use(express.static(path.join(__dirname, '../frontend'))); 
 app.use(express.static(path.join(__dirname, '../frontend/style/src')));
 
 app.set('views', 'frontend/views');
