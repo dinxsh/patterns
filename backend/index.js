@@ -12,4 +12,4 @@ const CompRouter = require("../backend/routes/components")
 app.use("/", MainRouter)
 app.use("/components", CompRouter)
 
-app.listen(4000, ()=> console.log("App Available now"));
+app.listen(process.env.PORT, ()=> console.log("App Available now"));
