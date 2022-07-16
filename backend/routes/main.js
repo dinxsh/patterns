@@ -2,18 +2,14 @@ const express = require("express")
 const router = express.Router()
 
 router.get('/', (request, response) => {              
-    response.render('../../frontend/views/introduction.html')
-});
-
-router.get('/get-started', (request, response) => {              
-    response.render('../../frontend/views/getstarted.html')
+    response.render('../frontend/views/')
 });
 
 router.get('/feedback', (request, response) => {              
     response.render('../../frontend/views/feedback.html')
 });
 
-router.get('/versions', (request, response) => {              
+router.get('/components', (request, response) => {              
     response.render('../frontend/views/versions.html')
 });
 
