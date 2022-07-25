@@ -1,12 +1,6 @@
 const express = require("express")
 const router = express.Router()
 
-router.get('/buttons', (request, response) => {              
-    response.render('../../frontend/views/components/button.html')        
-});
-
-router.get('/navbar', (request, response) => {              
-    response.render('../../frontend/views/components/navbar.html')
-});
+// components router to be added in v2
 
 module.exports = router
