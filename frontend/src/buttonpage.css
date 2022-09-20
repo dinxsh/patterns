@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+.details-accordion div {
+	border-left: 2px solid #000;
+	border-right: 2px solid #000;
+	border-bottom: 2px solid #000;
+	padding: 1.5em;
+    margin:15px;
+    margin-top:0px ;
+    margin-bottom:0px ;
+}
+
+.details-accordion div > * + * {
+	margin-top: 1.5em;
+}
+
+.details-accordion + .details-accordion {
+	margin-top: .5rem;
+}
+
+.summary-accordion {
+	list-style: none;
+    margin:15px;
+    margin-top:0px ;
+    margin-bottom:0px ;
+}
+
+.summary-accordion::-webkit-details-marker {
+	display: none;
+}
+
+.summary-accordion {
+	border: 2px solid #000;
+	padding: .75em 1em;
+	cursor: pointer;
+	position: relative;
+	padding-left: calc(1.75rem + .75rem + .75rem);
+}
+
+.summary-accordion:before {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	left: .75rem;
+	content: "↓";
+	width: 1.75rem;
+	height: 1.75rem;
+	background-color: #000;
+	color: #FFF;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	flex-shrink: 0;
+}
+
+.details-accordion[open] summary {
+	background-color: #eee;
+}
+
+.details-accordion[open] summary:before {
+	content: "↑";
+}
+
+.summary-accordion:hover {
+	background-color: #eee;
+}
+
+.code-accordion {
+	font-family: monospace;
+	font-weight: 600;
+}

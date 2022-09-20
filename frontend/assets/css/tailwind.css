@@ -406,8 +406,7 @@ audio,
 iframe,
 embed,
 object {
-  display: block;
-  /* 1 */
+  display: block;  
   vertical-align: middle;
   /* 2 */
 }
