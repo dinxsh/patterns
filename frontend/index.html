@@ -11,8 +11,18 @@
     <!-- ==== WOW JS ==== -->
     <script src="assets/js/wow.min.js"></script>
     <script> new WOW().init(); </script>
+    <script type="text/javascript">  
+      var before_loadtime = new Date().getTime();  
+      window.onload = Pageloadtime;  
+      function Pageloadtime() {  
+          var aftr_loadtime = new Date().getTime();      
+          pgloadtime = (aftr_loadtime - before_loadtime) / 1000     
+          document.getElementById("loadtime").innerHTML = "<center>page load time is <font color='red'><b>" + pgloadtime + "</b></font> Seconds</center>";  
+      }  
+    </script>  
   </head>
   <body>
+    <span id="loadtime"></span>
     <!-- ====== Navbar Section Start -->
     <div class="ud-header absolute top-0 left-0 z-40 flex w-full items-center bg-transparent">
       <div class="container">
