@@ -110,22 +110,6 @@
 
 .button.block{width:100%}
 
-.heading{
-    font-size:28px;
-}
-
-.subheading{
-    font-size:20px;
-}
-
-.sub-subheading{
-    font-size:17px;
-}
-
-.content{
-    margin:18px;
-}
-
 .button.primary.xlg{padding:18px 22px;}
 .button.primary.lg{padding:16px 20px;}
 .button.primary.md{padding:14px 18px;}
