@@ -1,13 +1,13 @@
-# Yeet-UI 🗿
+# patterns 🗿
 
 A free-to-use tool which provides css components 🐱‍👤
 
 # Contribute 🧞‍♂️
 
-to contribute [mail me](mailto:dinestalwadker@gmail.com) or open a [PR](https://github.com/dinxsh/Yeet-UI/pulls)
+to contribute open a [PR](https://github.com/dinxsh/Yeet-UI/pulls) or [mail me](mailto:dinestalwadker@gmail.com)
 
 # License 📜
 
-free to use in any project
+feel free to use it in any project
 
 ~ made by [dinesh](https://github.com/dinxsh)
